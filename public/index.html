@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Encuesta</title>
+</head>
+<body>
+
+    <!-- CREATE THE CRUD-->
+    <header>
+       
+        <div class="box_img">
+           <h4>Quiz by</h4>
+           <img src="imagenes/Logo-page.png" alt="logo-page">
+        </div>
+
+        <div class="box_img">
+            <h4>Crear Cliente</h4>
+        </div>
+
+        <form action="/app/url/Crear" method="post">
+
+            <div class="box_center_form">
+                <label for="ejemplonombre">Nombre Completo</label><br>
+                <input id="nombre" name="nombre" class="input_text" type="text" placeholder="Ingrese nombre" autocomplete="off">
+            </div>
+
+            <div class="box_center_form">
+                <label for="ejemploedad">Edad</label><br>
+                <input id="edad" name="edad" class="input_text" type="number" placeholder="Ingrese edad" autocomplete="off">
+            </div>
+
+            <div class="box_center_form">
+                <label for="">Correo Electronico</label><br>
+                <input id="correo" name="correo" class="input_text" type="text" placeholder="Ingrese correo" autocomplete="off">
+            </div>
+            
+            
+            <div class="box_center_form">
+                <select id="genero" name="genero" class="input_select" >
+                    <option>Genero</option>
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                    <option>Prefiero no decirlo</option>
+                  </select>
+            </div>
+            
+            <div class="box_center_form">
+                <button type="submit" class="button-submit">Enviar</button>
+            </div>
+
+        </form>
+    </header>
+
+    <!-- READ THE CRUD -->
+
+    <section>
+        <div class="box_img">
+            <h4>Quiz by</h4>
+            <img src="imagenes/Logo-page.png" alt="logo-page">
+         </div>
+ 
+         <div class="box_img">
+             <h4>Buscar Cliente</h4>
+         </div>
+ 
+         <form action="/app/url/Buscar" method="get">
+ 
+             <div class="box_center_form">
+                 <label for="">Correo Electronico</label><br>
+                 <input id="buscar" name="buscar" class="input_text" type="text" placeholder="Ingrese correo" autocomplete="off">
+             </div>
+ 
+             <div class="box_center_form">
+                 <button type="submit" class="button-submit">Enviar</button>
+             </div>
+ 
+         </form>
+        
+    </section>
+
+    <aside>
+
+        <div class="box_img">
+            <h4>Quiz by</h4>
+            <img src="imagenes/Logo-page.png" alt="logo-page">
+         </div>
+ 
+         <div class="box_img">
+             <h4>Actualizar Cliente</h4>
+         </div>
+ 
+         <form action="/app/url/Actualizar" method="post">
+            <div class="box_img">
+                <h4>Ingrese los cambios deseados</h4>
+            </div>
+
+             <div class="box_center_form">
+                 <label for="">Correo Electronico</label><br>
+                 <input id="buscarACT" name="buscarACT" class="input_text" type="text" placeholder="Ingrese correo" autocomplete="off">
+             </div>
+
+             <div class="box_center_form">
+                <label for="">Nombre</label><br>
+                <input id="nombreACT" name="nombreACT" class="input_text" type="text" placeholder="Ingrese correo" autocomplete="off">
+            </div>
+
+            <div class="box_center_form">
+                <label for="">Edad</label><br>
+                <input id="edadACT" name="edadACT" class="input_text" type="text" placeholder="Ingrese correo" autocomplete="off">
+            </div>
+
+            <div class="box_center_form">
+                <select id="generoACT" name="generoACT" class="input_select" >
+                    <option>Genero</option>
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                    <option>Prefiero no decirlo</option>
+                  </select>
+            </div>
+ 
+             <div class="box_center_form">
+                 <button type="submit" class="button-submit">Enviar</button>
+             </div>
+ 
+         </form>
+
+    </aside>
+    <footer>
+        
+        <div class="box_img">
+            <h4>Quiz by</h4>
+            <img src="imagenes/Logo-page.png" alt="logo-page">
+         </div>
+ 
+         <div class="box_img">
+             <h4>Eliminar Cliente</h4>
+         </div>
+ 
+         <form action="/app/url/Eliminar" method="post">
+
+             <div class="box_center_form">
+                 <label for="">Correo Electronico</label><br>
+                 <input id="buscarDel" name="buscarDel" class="input_text" type="text" placeholder="Ingrese correo" autocomplete="off">
+             </div>
+ 
+             <div class="box_center_form">
+                 <button type="submit" class="button-submit">Enviar</button>
+             </div>
+ 
+         </form>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
